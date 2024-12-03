@@ -1,0 +1,171 @@
+/* Creating Font Families */
+.bungee-inline-regular {
+    font-family: "Bungee Inline", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .cantata-one-regular {
+    font-family: "Cantata One", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+:root {
+    /*defining colors for website*/
+    --color-primary:#ffd80a ;
+    --color-secondary:#000000 ;
+    --color-background: #ffffff;
+    --color--tertiary:#81CEEB;
+
+
+    /* UI component color */
+    --color-card-background:#FFF9C7;
+    --color-navbar:#ffd80a;
+}
+
+html, body {
+    height: 100%; /* Ensure the page takes up the full height */
+    margin: 0; /* Remove default margins */
+    display: flex;
+    flex-direction: column; /* Make the body a flex container */
+}
+
+/* Defining the Body Design */
+body {
+    background-color:var(--color-background);
+    font-size: medium;
+    line-height: 1.5;
+    color: var(--color-primary);
+    
+}
+
+/* Ensure the navbar title stays centered */
+
+.navbar{
+    background-color:var(--color-card-background)!important;
+    height: 100px;
+    
+}
+.navbar .navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--color-primary);
+    font-family: "Bungee Inline", sans-serif;
+    font-weight: 900;
+    font-size: xx-large;
+    text-shadow: 
+    2px 2px 0px black,  /* Right bottom */
+    -2px -2px 0px black, /* Left top */
+    -2px 2px 0px black,  /* Left bottom */
+    2px -2px 0px black;  /* Right top */
+    font-size: 24px; /* Adjust size as needed */
+      }    
+            
+
+  /* Optional: Adjust link styling if needed */
+  .nav-link {
+    padding: 0.5rem 1rem;
+    color:var(--color-primary);
+    text-decoration: none;
+    font-family: "Bungee Inline", sans-serif;
+    text-shadow: 
+    2px 2px 0px black,  /* Right bottom */
+    -2px -2px 0px black, /* Left top */
+    -2px 2px 0px black,  /* Left bottom */
+    2px -2px 0px black;  /* Right top */
+    font-size: 24px; /* Adjust size as needed */
+      }    
+
+.nav-link:hover {
+    text-decoration: underline;
+    color: var(--color--tertiary);
+  }
+
+
+
+
+/* Form Container */
+.form-container {
+    display:flex ;
+    width: 450px;
+    margin: 20px auto;
+    padding: 20px;
+    background: var(--color-card-background);
+    border-radius: 35px;
+    border-color: var(--color-primary);
+    overflow: hidden;
+}
+  
+
+
+  /* Form Header */
+  form h2 {
+    text-align: right;
+    margin-bottom: 20px;
+    color:var(--color-primary);
+    font-family: "Bungee Inline", sans-serif;
+    text-shadow: 
+    2px 2px 0px black,  /* Right bottom */
+    -2px -2px 0px black, /* Left top */
+    -2px 2px 0px black,  /* Left bottom */
+    2px -2px 0px black;  /* Right top */
+    font-size: 24px; /* Adjust size as needed */
+  }
+  
+  /* Labels and Inputs */
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+    font-family: "Cantata One", serif;
+    padding-left: 20px;
+
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 35px;
+    box-sizing: border-box;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    
+    outline: none;
+  }
+  
+  /* Button */
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color:var(--color-primary);
+    border: none;
+    border-radius: 4px;
+    color: var(--color-secondary);
+    font-size: 16px;
+    font-family: "Cantata One", serif;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color:var(--color--tertiary);
+  }
+  
+
+  .footer{
+    background-color: var(--color-card-background);
+    padding: 0px;
+    margin-top: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    
+}

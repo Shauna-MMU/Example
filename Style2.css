@@ -1,0 +1,175 @@
+/* Creating Font Families */
+.bungee-inline-regular {
+    font-family: "Bungee Inline", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    }
+    
+    .cantata-one-regular {
+    font-family: "Cantata One", serif;
+    font-weight: 400;
+    font-style: normal;
+    }
+    
+    :root {
+    /* Defining colors for website */
+    --color-primary: #38571A;
+    --color-secondary: #000000;
+    --color-background: #ffffff;
+    --color-tertiary: #81CEEB;
+    
+    /* UI component color */
+    --color-card-background: #D5EBC1;
+    --color-navbar: #ffd80a;
+    }
+    
+    html, body {
+    height: 100%; /* Ensure the page takes up the full height */
+    margin: 0; /* Remove default margins */
+    display: flex;
+    flex-direction: column; /* Make the body a flex container */
+    scroll-behavior: smooth;
+    }
+    
+    /* Defining the Body Design */
+    body {
+    background-color: var(--color-background);
+    font-size: medium;
+    line-height: 1.5;
+    color: var(--color-primary);
+    }
+
+
+/* Full-width container */
+.full-width-container {
+    display: flex; /* Flexbox for side-by-side layout */
+    width: 100%; /* Full width of the page */
+    height: 100vh; /* Full viewport height */
+  }
+  
+  /* Text container */
+  .text-container {
+    flex: 1; /* Takes up half the container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    background-color: #f4f4f4; /* Optional background color for contrast */
+  }
+  
+  .text-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .text-container p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  /* Image container */
+  .image-container {
+    flex: 1; /* Takes up half the container */
+  }
+  
+  .image-container img {
+    width: 100%; /* Ensure the image fills its container */
+    height: 100%; /* Ensure it covers the height of the container */
+    object-fit: cover; /* Maintain aspect ratio while filling the area */
+  }
+
+
+/*NAVBAR*/
+    /* Ensure the navbar title stays centered */
+    .navbar {
+        background-color: var(--color-card-background) !important;
+        height: 100px;
+        width:100%;
+        }
+        
+        .navbar .navbar-brand {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        color: var(--color-primary);
+        font-family: "Cantata One", serif;
+        font-weight: 900;
+        font-size: xx-large;
+        }
+        
+        /* Optional: Adjust link styling if needed */
+        .nav-link {
+        padding: 0.5rem 1rem;
+        color: var(--color-primary);
+        text-decoration: none;
+        font-family: "Cantata One", serif;
+        }
+        
+        .nav-link:hover {
+        text-decoration: underline;
+        color: #ffffff;
+        }
+        
+        .footer {
+        background-color: var(--color-card-background);
+        padding: 0;
+        margin-top: 20px;
+        margin-left: 0;
+        margin-right: 0;
+        height: 100px;
+        width: auto;
+        }
+    
+        .card-img{
+          height: 300px;
+          width: auto;
+          padding: 20px;
+        }
+
+        .card-title{
+          font-family: "Cantata One", serif;
+
+        }
+        .card text-bg-dark{
+          padding:20px;
+        }
+
+        /* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/* Container for Two Columns */
+.container {
+  display: flex;
+  gap: 20px; /* Space between columns */
+}
+
+/* Individual Columns */
+.column {
+  flex: 1; /* Ensures both columns take equal space */
+  padding: 20px;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Optional: Adjust column width */
+.column-left {
+  flex: 2; /* Makes the left column twice as wide as the right */
+  margin-top: 20px;
+  
+}
+
+.column-right {
+  flex: 1;
+  margin-top:20px;
+  
+}

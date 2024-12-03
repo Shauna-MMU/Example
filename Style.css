@@ -1,0 +1,274 @@
+/* Creating Font Families */
+  
+    .open-sans{
+      font-family: "Open Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+      font-variation-settings:
+        "wdth" 100;
+    }
+     
+  .playfair-display{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    }
+
+    
+    :root {
+    /* Defining colors for website */
+    --color-primary:#102f15;
+    --color-secondary: #000000;
+    --color-background:#fffdf5;
+    --color-tertiary: #81CEEB;
+    
+    /* UI component color */
+    --color-card-background: #D5EBC1;
+    --color-navbar: #ffd80a;
+    }
+    
+    html, body {
+    height: 100%; /* Ensure the page takes up the full height */
+    margin: 0; /* Remove default margins */
+    display: flex;
+    flex-direction: column; /* Make the body a flex container */
+    scroll-behavior: smooth;
+    }
+    
+    /* Defining the Body Design */
+    body {
+    background-color: var(--color-background);
+    font-size: medium;
+    line-height: 1.5;
+    color: var(--color-primary);
+    }
+    
+    /*LANDING PAGE STYLE*/
+
+    /* Full-width container */
+.full-width-container {
+    display: flex; /* Flexbox for side-by-side layout */
+    width: 100%; /* Full width of the page */
+    height: 100vh; /* Full viewport height */
+    border-radius: 35px;
+    
+    
+  }
+  /* Text container */
+  .text-container {
+    flex: 1; /* Takes up half the container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background-color:#102f15; /* Optional background color for contrast */
+  }
+  
+  .text-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--color-background);
+    font-family: "Open Sans", sans-serif;
+    text-align: start;
+  }
+  
+  .text-container p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--color-background);
+    font-family: "Playfair Display", serif;
+    text-align: start;
+  }
+  
+  /* Image container */
+  .image-container {
+    flex: 1; /* Takes up half the container */
+  }
+  
+  .image-container img {
+    width: 100%; /* Ensure the image fills its container */
+    height: 100%; /* Ensure it covers the height of the container */
+    object-fit: cover; /* Maintain aspect ratio while filling the area */
+  }
+
+     /* Styling Image Cards */
+    .card-body {
+        background-color: var(--color-card-background);
+        font-family: "Cantata One", serif;
+        }
+    
+    .card-title {
+    font-family: "Cantata One", serif;
+    color:var(--color-primary)
+    }
+    
+    .card.text-bg-dark {
+    height: 150px;
+    width: 100%;
+    }
+
+    .card{
+      margin-bottom: 20px;
+    }
+    /* Styling Image Cards */
+
+
+    /* Styling CTA Button */
+    .btn {
+    background-color:var(--color-primary);
+    border-radius: 35PX;
+    border-color: #000000;
+    color: var(--color-background);
+    }
+
+    .btn:hover {
+        color:var(--color-primary);
+        background-color:var(--color-card-background);
+        border-color: var(--color-primary);
+      }
+     /* Styling CTA Button */ 
+    
+
+    /*NAVBAR*/
+    /* Ensure the navbar title stays centered */
+    .navbar {
+    background-color: var(--color-card-background) !important;
+    height:auto;
+    width:100%;
+    }
+    
+    .navbar .navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--color-primary);
+    font-family: "Open Sans", sans-serif;
+    font-weight: 100;
+    font-size: xx-large;
+    }
+    
+    /* Optional: Adjust link styling if needed */
+    .nav-link {
+    padding: 0.5rem 1rem;
+    color: var(--color-primary);
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    }
+    
+    .nav-link:hover {
+    text-decoration: underline;
+    color:var(--color-background);
+    }
+  /*NAVBAR*/
+  
+  .content-section {
+    padding: 20px;
+}
+.content-section img {
+    width: 300px;
+    height: 300px;
+}
+.image-container {
+    position: relative;
+    width: 55%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+h2 {
+    padding-left: 20px;
+    font-family: "Bungee Inline", sans-serif;
+}
+.full-width-container {
+    display: flex;
+    flex-direction: row;
+    border-radius: 35px;
+    align-items: center;
+    padding-left: 20px
+
+    
+}
+.text-container {
+    display: flex;
+    flex-direction: row;
+    text-align:start;
+    height: 300px;
+    width: auto;
+    padding-right: 20px;
+}
+
+.footer {
+  background-color: var(--color-card-background);
+  font-family: "Cantata One", serif;
+  height: 100px;
+  padding-top: 20px;
+  width: auto;}
+  
+
+/*NEWSLETTER PAGE STYLE*/
+/* Form Container */
+.form-container {
+  display:flex ;
+  width: 450px;
+  height: auto;
+  margin: 20px auto;
+  padding: 20px;
+  background:var(--color-primary);
+  border-radius: 35px;
+  border-color: var(--color-primary);
+  
+}
+/* Form Header */
+form h2 {
+  text-align:center; 
+  color:var(--color-background);
+  font-family: "Cantata One", serif;
+}
+
+/* Labels and Inputs */
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color:var(--color-background);
+  font-family: "Cantata One", serif;
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 35px;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  
+  outline: none;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 10px;
+  background-color:var(--color-card-background);
+  border: none;
+  border-radius: 35px;
+  color:var(--color-secondary);
+  font-size: 16px;
+  font-family: "Cantata One", serif;
+  cursor: pointer;
+}
+
+button:hover {
+  color:var(--color-background);
+  background-color:var(--color-primary);
+}
+/*NEWSLETTER PAGE STYLE*/
+
+
+
